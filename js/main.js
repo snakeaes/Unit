@@ -1,18 +1,18 @@
 let color_theme = true;
-
-Close_welcome_window = () => {
-    const wrapper_welcome = document.getElementById("wrapper__welcome_window");
-    const wrapper_background = document.getElementById("wrapper__white_background");
+Close__Wrapper_Welcome = () => {
+    const wrapper__white_background = document.getElementById("wrapper__white_background");
     const wrapper = document.getElementById("wrapper");
-    wrapper_welcome.remove();
-    wrapper_background.style.display = "block"; 
-    wrapper.style.display = "flex"
-    delete wrapper_welcome;
-    delete wrapper_background;
-    delete wrapper;
-}
+    
+    wrapper__welcome.remove();
+    wrapper__white_background.style.display = "block"; 
+    wrapper.style.display = "flex";
 
-// setTimeout(Close_welcome_window, 13700);
+    delete wrapper__welcome;
+
+    delete wrapper__white_background;
+} 
+
+setTimeout(Close__Wrapper_Welcome, 5000);
 
 Switch_color = () => {
     const white__theme = document.getElementById('wrapper__white_background');
